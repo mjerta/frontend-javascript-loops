@@ -11,7 +11,7 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
-
+console.log("Opdracht 1")
 for (let i = 0; i < names.length; i++) {
   const name = names[i];
   console.log(`${names[i]}je`);
@@ -56,6 +56,7 @@ for (let i = 0; i < randomNumbers.length; i++) {
 
 const squares = [30, 2, 8, 24, 11];
 
+console.log("\n Opdracht 3")
 for (let i = 0; i < randomNumbers.length; i++) {
   let number = randomNumbers[i];
   console.log(`Het volume van ${number} is ${number * number * number}`);
