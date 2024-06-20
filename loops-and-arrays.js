@@ -25,12 +25,18 @@ for (let i = 0; i < names.length; i++) {
 
 console.log("\nOpdracht 2");
 const numbers = [2, 4, 5, 29, 38];
-for (let i = 0; i < numbers.length; i++) {
+
+const randomNumbers = [];
+for (let i = 0; i < 150; i++) {
+  // Generate a random number between 0 and 100
+  randomNumbers.push(Math.floor(Math.random() * 101));
+}
+for (let i = 0; i < randomNumbers.length; i++) {
   // console.log(numbers[i]);
-  if (numbers[i] % 2 === 0) {
-    console.log(numbers[i] * 2);
-  } else if (numbers[i] % 1 === 0) {
-    console.log(numbers[i] * 3);
+  if (randomNumbers[i] % 2 === 0) {
+    console.log(randomNumbers[i] * 2);
+  } else if (randomNumbers[i] % 1 === 0) {
+    console.log(randomNumbers[i] * 3);
   }
 }
 
@@ -49,6 +55,11 @@ for (let i = 0; i < numbers.length; i++) {
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+
+for (let i = 0; i < randomNumbers.length; i++) {
+  let number = randomNumbers[i];
+  console.log(`Het volume van ${number} is ${number * number * number}`);
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
