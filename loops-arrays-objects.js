@@ -6,13 +6,7 @@ const scores = [
   {name: 'Max', score: 83, grade: null},
   {name: 'David', score: 77, grade: null},
   {name: 'Khalid', score: 92, grade: null},
-  {name: 'Khalid', score: 92, grade: null},
-  {name: 'Khalid', score: 92, grade: null},
-  {name: 'Khalid', score: 92, grade: null},
-  {name: 'Khalid', score: 92, grade: null},
-  {name: 'Khalid', score: 92, grade: null},
-  {name: 'Khalid', score: 92, grade: null},
-  {name: 'Rianne', score: 59, grade: null}
+  {name: 'Rianne', score: 63, grade: null}
 ];
 
 // Verwachtte uitkomsten:
@@ -28,13 +22,13 @@ for (let i = 0; i < scores.length; i++) {
   const score = scores[i];
   if (score.score < 60) {
     score.grade = "F";
-  } else if (score.score > 60 && score.grade < 70) {
+  } else if (score.score > 60 && score.score < 70) {
     score.grade = "D";
-  } else if (score.score > 70 && score.grade < 80) {
+  } else if (score.score > 70 && score.score < 80) {
     score.grade = "C";
-  } else if (score.score > 80 && score.grade < 90) {
+  } else if (score.score > 80 && score.score < 90) {
     score.grade = "B";
-  } else if (score.score > 90 && score.grade < 100) {
+  } else if (score.score > 90 && score.score < 100) {
     score.grade = "A";
   }
 
