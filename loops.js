@@ -10,9 +10,9 @@
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
-
+console.log("Opdracht 1");
 let stars = ''
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i <= 4; i++) {
   stars += '*';
   console.log(stars);
 }
@@ -27,6 +27,7 @@ for (let i = 0; i < 4; i++) {
 // klaar!
 // ==========================================
 
+console.log("\nOpdracht 2");
 for (let i = 0; i <= 4; i++) {
   if (i === 4) {
     console.log('klaar!')
@@ -100,7 +101,8 @@ for (let i = 0; i <= 9; i++) {
 // etc.
 // ==========================================
 
-for (let i = 0; i <= 100; i++) {
+console.log("\nOpdracht 3")
+for (let i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
   } else if (i % 3 === 0) {
@@ -111,5 +113,3 @@ for (let i = 0; i <= 100; i++) {
     console.log(i);
   }
 }
-
-

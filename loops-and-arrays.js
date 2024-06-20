@@ -26,6 +26,7 @@ for (let i = 0; i < names.length; i++) {
 console.log("\nOpdracht 2");
 const numbers = [2, 4, 5, 29, 38];
 
+// Arrays with 150 random numbers
 const randomNumbers = [];
 for (let i = 0; i < 150; i++) {
   // Generate a random number between 0 and 100
