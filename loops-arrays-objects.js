@@ -6,6 +6,12 @@ const scores = [
   {name: 'Max', score: 83, grade: null},
   {name: 'David', score: 77, grade: null},
   {name: 'Khalid', score: 92, grade: null},
+  {name: 'Khalid', score: 92, grade: null},
+  {name: 'Khalid', score: 92, grade: null},
+  {name: 'Khalid', score: 92, grade: null},
+  {name: 'Khalid', score: 92, grade: null},
+  {name: 'Khalid', score: 92, grade: null},
+  {name: 'Khalid', score: 92, grade: null},
   {name: 'Rianne', score: 59, grade: null}
 ];
 
@@ -16,9 +22,10 @@ const scores = [
 // 66
 // ==========================================
 
+console.log('Opracht 1');
 for (let i = 0; i < scores.length; i++) {
 
-  let score = scores[i];
+  const score = scores[i];
   if (score.score < 60) {
     score.grade = "F";
   } else if (score.score > 60 && score.grade < 70) {
@@ -31,7 +38,7 @@ for (let i = 0; i < scores.length; i++) {
     score.grade = "A";
   }
 
-  console.log(`${score.name} got a score of ${score.score} and has a grade of ${score.grade}`);
+  console.log(`name: ${score.name}, score: ${score.score} grade: ${score.grade}`);
 }
 
 // ==========================================
@@ -70,6 +77,7 @@ const NOVIEmployees = [
   {firstName: 'Mark', lastName: 'Rensen'},
 ];
 
+console.log('\n Opdracht 2')
 for (let i = 0; i < NOVIEmployees.length; i++) {
   const employee = NOVIEmployees[i];
   const email = `${employee.firstName.toLowerCase()}.${employee.lastName.toLowerCase()}@novi.nl`
@@ -103,6 +111,7 @@ for (let i = 0; i < NOVIEmployees.length; i++) {
 //  3572 = Wittevrouwen
 //  3581 = Oudwijk
 //  3583 = Schildersbuurt
+//  3583 = Schildersbuurt
 
 const students = [
   {name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: null},
@@ -119,38 +128,34 @@ const students = [
   {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
 
+console.log("\nOpdracht 3")
 for (let i = 0; i < students.length; i++) {
   const lookUpValue = students[i];
   switch (lookUpValue.zipCode) {
     case "3513":
       lookUpValue.neighborhood = "Pijlsweerd";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
     case "3514":
       lookUpValue.neighborhood = "Vogelenbuurt";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
     case "3512":
       lookUpValue.neighborhood = "Binnenstad";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
     case "3531":
       lookUpValue.neighborhood = "Lombok";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
     case "3572":
       lookUpValue.neighborhood = "Wittevrouwen";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
     case "3581":
       lookUpValue.neighborhood = "Oudwijk";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
     case "3583":
       lookUpValue.neighborhood = "Schildersbuurt";
-      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
       break;
   }
+  console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} , neighborhood: ${lookUpValue.neighborhood}`);
+
 }
 
 // Verwachte uitkomsten:
@@ -169,6 +174,5 @@ for (let i = 0; i < students.length; i++) {
 //     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Lombok' }
 // ]
 // ==========================================
-
 
 
