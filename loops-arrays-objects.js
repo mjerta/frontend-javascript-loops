@@ -70,6 +70,13 @@ const NOVIEmployees = [
   {firstName: 'Mark', lastName: 'Rensen'},
 ];
 
+for (let i = 0; i < NOVIEmployees.length; i++) {
+  const employee = NOVIEmployees[i];
+  const email = `${employee.firstName.toLowerCase()}.${employee.lastName.toLowerCase()}@novi.nl`
+  employee.email = email;
+  console.log(`firstname: ${employee.firstName} lastName: ${employee.lastName}, email ${employee.email}`);
+}
+
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
@@ -111,6 +118,40 @@ const students = [
   {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
   {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
+
+for (let i = 0; i < students.length; i++) {
+  const lookUpValue = students[i];
+  switch (lookUpValue.zipCode) {
+    case "3513":
+      lookUpValue.neighborhood = "Pijlsweerd";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+    case "3514":
+      lookUpValue.neighborhood = "Vogelenbuurt";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+    case "3512":
+      lookUpValue.neighborhood = "Binnenstad";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+    case "3531":
+      lookUpValue.neighborhood = "Lombok";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+    case "3572":
+      lookUpValue.neighborhood = "Wittevrouwen";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+    case "3581":
+      lookUpValue.neighborhood = "Oudwijk";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode} ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+    case "3583":
+      lookUpValue.neighborhood = "Schildersbuurt";
+      console.log(`name: ${lookUpValue.name}, city: ${lookUpValue.city}, zipCode: ${lookUpValue.zipCode}, neighborhood: ${lookUpValue.neighborhood}`);
+      break;
+  }
+}
 
 // Verwachte uitkomsten:
 // [
